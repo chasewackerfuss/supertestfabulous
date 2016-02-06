@@ -1,0 +1,161 @@
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+/* ==================================
+  Table of Contents
+   ==================================
+** Basic
+** Navbar
+
+   ================================== */
+
+
+
+/* ==================================
+   Basic
+   ================================== */
+
+div.vertical-line{
+  width: 1px;
+  background-color: #333333;
+  height: 100%;
+  float: left;
+}
+
+/*
+// Overloading "glyphicon" class with "fa".
+.glyphicon {
+
+    @extend .fa;
+
+    // Overloading "glyphicon-chevron-left" with "fa-arrow-left".
+    &.glyphicon-chevron-left {
+        @extend .fa-chevron-left;
+    }
+
+    // Overloading "glyphicon-chevron-right" with "fa-arrow-right".
+    &.glyphicon-chevron-right {
+        @extend .fa-chevron-right;
+    }
+}*/
+
+
+.img-responsive,
+.thumbnail > img,
+.thumbnail a > img,
+.carousel-inner > .item > img,
+.carousel-inner > .item > a > img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.logo img {
+  max-width: 100%;
+  height: auto;
+}
+
+
+
+/* ==================================
+   Carousel
+   ================================== */
+
+.carousel{
+    position:relative;
+}
+
+.carousel-control .icon-prev,
+.carousel-control .icon-next,
+.carousel-control .glyphicon-chevron-left,
+.carousel-control .glyphicon-chevron-right {
+  position: absolute;
+  top: 50%;
+  z-index: 5;
+  display: inline-block;
+  margin-top: -10px;
+height: 90px;
+    width: 90px;
+}
+
+.featured_slider_wrapper a.featured_prev {
+	left:50px;
+	background:url(../img/frame_buttons.png) no-repeat -200px 0;
+}
+.featured_slider_wrapper a.featured_next {
+	position:absolute;
+	right:470px;
+	background:url(../img/frame_buttons.png) no-repeat -260px 0;
+	transition:right 400ms, opacity 400ms!important;
+	-webkit-transition:right 400ms, opacity 400ms!important;
+}
+.full_show .featured_slider_wrapper a.featured_next {
+	right:50px;
+}
+
+
+
+
+/* ==================================
+   Navbar
+   ================================== */
+
+element.style {
+}
+.navbar-inverse {
+    background-color: #000000;
+    height: 250px;
+    background: rgba(0, 0, 0, 0.75);
+}
+
+.navbar-fixed-bottom {
+    bottom: 0;
+    margin-bottom: 0;
+    border-width: 1px 0 0;
+}
+
+.navbar-header {
+}
+
+.navbar-back  {
+    background-color: #000000;
+    height: 110px;
+    width: 100%;
+    fixed: top;
+    padding-top: 20px;
+}
+
+.navbar-nav {
+    margin:0px;
+    float: right;
+}
+
+.navbar-inverse .navbar-nav>li>a {
+    color: #FFFFFF;
+    text-transform: uppercase;
+    font-weight: 300;
+	font-size:14px;
+	line-height:17px;
+    padding-left: 30px;
+    padding-right: 30px;
+    text-align: center;
+    font-family: 'Lato';
+    font-size: 15px;
+    letter-spacing: 0.5px;
+
+}
+
+.navbar-inverse .navbar-nav>li>a:hover {
+    color: #AAD68C;
+    text-transform: uppercase;
+    font-weight: 300;
+	font-size:14px;
+	line-height:17px;
+    padding-left: 30px;
+    padding-right: 30px;
+    text-align: center;
+    font-family: 'Lato';
+    font-size: 15px;
+    letter-spacing: 0.5px;
+
+}
