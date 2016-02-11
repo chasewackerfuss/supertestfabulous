@@ -159,3 +159,106 @@ element.style {
     letter-spacing: 0.5px;
 
 }
+
+
+/*mobile navigation*/
+
+@keyframes displayMobile {
+  0% {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
+.mobile-navigation {
+  display: none;
+  position: fixed;
+  z-index: 9999;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.80);
+  padding: 60px 20px 35px;
+  animation-duration: 0.3s;
+  animation-name: displayMobile;
+}
+.mobile-navigation ul {
+  width: 100%;
+  text-align: center;
+}
+.mobile-navigation ul li {
+  display: block;
+}
+.mobile-navigation ul li a {
+  font-size: 22px;
+  color: #FFFFFF;
+  font-family: 'Lato';
+  margin-bottom: 20px;
+  padding-bottom: 15px;
+  position: relative;
+  font-weight: 200;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+/*Subtle Line Animation*/
+.mobile-navigation ul li a:after {
+  opacity: 0;
+  transform: translateY(10px);
+  content: '';
+  width: 26px;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  height: 2px;
+  background-color: white;
+  display: block;
+  z-index: 9999;
+  margin-left: -13px;
+  transition: opacity 0.3s, transform 0.3s;
+}
+.mobile-navigation ul li:hover a:after,
+.mobile-navigation ul li:focus a:after {
+  opacity: 1;
+  transform: translateY(0px);
+}
+.close-mobile {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  border-radius: 50%;
+  border: 2px solid #414042;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 42px;
+  width: 42px;
+  font-size: 16px;
+  color: #414042;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+/*Mobile Window Close*/
+.close-mobile:hover,
+.close-mobile:focus {
+  background-color: #414042;
+  color: #AAD68C;
+  /*color: #FFFFFF;*/
+  cursor: pointer;
+}
+.mobile-navigation ul li:hover,
+.mobile-navigation ul li:focus {
+  background-color: transparent;
+}
+
+/*Mobile Navigation Rollover*/
+.mobile-navigation ul li a:hover,
+.mobile-navigation ul li a:focus {
+  background-color: transparent;
+  color: #AAD68C;
+}
