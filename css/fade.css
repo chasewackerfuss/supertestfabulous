@@ -1,0 +1,146 @@
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+.panel {
+    font-family: "Source Sans Pro", Helvetica, Arial, sans-serif;
+    color: white;
+    height: 100%;
+    min-width: 100%;
+    text-align: center;
+    display: table;
+    margin: 0;
+    background: #1c1c1c;
+    padding: 0 0;
+}
+
+.panel .inner {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.backgroundimg {
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+
+}
+
+#back1 {
+    background: url("http://www.creativekari.com/Test/img/main/OAALA01.png") no-repeat center fixed;
+}
+
+#back2 {
+background: url("http://www.creativekari.com/Test/img/main/OAALA02.png") no-repeat center fixed;
+}
+
+#back3 {
+background: url("http://www.creativekari.com/Test/img/main/OAALA03.png") no-repeat center fixed;
+}
+
+#back4 {
+  background: url("http://www.creativekari.com/Test/img/main/OAALA04.png") no-repeat center fixed;
+}
+
+#back5 {
+  background: url("http://www.creativekari.com/Test/img/main/OAALA05.png") no-repeat center fixed;
+}
+
+#back6 {
+    background: url("http://www.creativekari.com/Test/img/main/OAALA06.png") no-repeat center fixed;
+}
+
+#back7 {
+background: url("http://www.creativekari.com/Test/img/main/OAALA07.png") no-repeat center fixed;
+}
+
+#back8 {
+background: url("http://www.creativekari.com/Test/img/main/OAALA08.png") no-repeat center fixed;
+}
+
+#back9 {
+  background: url("http://www.creativekari.com/Test/img/main/OAALA09.png") no-repeat center fixed;
+}
+
+#back10 {
+  background: url("http://www.creativekari.com/Test/img/main/OAALA10.png") no-repeat center fixed;
+}
+
+
+
+@keyframes backgroundchangeFadeInOut {
+  0% {
+    opacity:1;
+  }
+  17% {
+    opacity:1;
+  }
+  25% {
+    opacity:0;
+  }
+  92% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+@-webkit-keyframes backgroundchangeFadeInOut {
+  0% {
+    opacity:1;
+  }
+  17% {
+    opacity:1;
+  }
+  25% {
+    opacity:0;
+  }
+  92% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+#backgroundchange div:nth-of-type(1) {
+  animation-delay: 8s;
+  -webkit-animation-delay: 8s;
+}
+#backgroundchange div:nth-of-type(2) {
+  animation-delay: 6s;
+  -webkit-animation-delay: 6s;
+}
+#backgroundchange div:nth-of-type(3) {
+  animation-delay: 4s;
+  -webkit-animation-delay: 4s;
+}
+#backgroundchange div:nth-of-type(4) {
+  animation-delay: 2s;
+  -webkit-animation-delay: 2s;
+}
+
+#backgroundchange div:nth-of-type(5) {
+  animation-delay: 0;
+  -webkit-animation-delay: 0;
+}
+
+#backgroundchange div {
+animation-name: backgroundchangeFadeInOut;
+animation-timing-function: ease-in-out;
+animation-iteration-count: infinite;
+animation-duration: 20s;
+
+-webkit-animation-name: backgroundchangeFadeInOut;
+-webkit-animation-timing-function: ease-in-out;
+-webkit-animation-iteration-count: infinite;
+-webkit-animation-duration: 20s;
+
+}

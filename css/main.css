@@ -134,8 +134,8 @@ element.style {
     color: #FFFFFF;
     text-transform: uppercase;
     font-weight: 300;
-	font-size:14px;
-	line-height:17px;
+	  font-size:18px;
+	  line-height:17px;
     padding-left: 30px;
     padding-right: 30px;
     text-align: center;
@@ -149,8 +149,8 @@ element.style {
     color: #AAD68C;
     text-transform: uppercase;
     font-weight: 300;
-	font-size:14px;
-	line-height:17px;
+    font-size:18px;
+    line-height:17px;
     padding-left: 30px;
     padding-right: 30px;
     text-align: center;
