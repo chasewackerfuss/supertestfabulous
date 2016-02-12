@@ -14,8 +14,12 @@
     <link href="css/bootstrap.css" rel="stylesheet">
 
     <!-- Custom CSS -->
-    <link href="css/full-slider.css" rel="stylesheet">
+    <link href="css/fade.css" rel="stylesheet">
     <link href="css/main.css" rel="stylesheet">
+
+    <!-- Google Font Lato -->
+    <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700' rel='stylesheet' type='text/css'>
+
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -46,17 +50,95 @@
                         <ul class="nav navbar-nav">
                           <!--<li><a href="home.html">Home</a></li>
                             <li><div class="vertical-line" style="height: 45px;" /></li>-->
-                            <li><a href="#">About Us</a></li>
+                            <li><a href="#" class="has-submenu" data-target="about-us">About Us</a></li>
                             <li><div class="vertical-line" style="height: 45px;" /></li>
-                            <li><a href="#">Portfolio</a></li>
+                            <li><a href="#" class="has-submenu" data-target="portfolio">Portfolio</a></li>
                             <li><div class="vertical-line" style="height: 45px;" /></li>
-                            <li><a href="#">Team</a></li>
+                            <li><a href="#" class="has-submenu" data-target="team">Team</a></li>
                             <li><div class="vertical-line" style="height: 45px;" /></li>
                             <li><a href="#">Contact</a></li>
                         </ul>
                     </div>
                     <!-- /.navbar-collapse -->
             </div>
+            <div class="submenu-container" id="submenuContainer">
+
+              <!-- about us submenu -->
+              <div class="submenu" name="about-us">
+                <div class="row">
+                  <div class="col-md-3">
+                    <a href="" class="sublinks">&nbsp;</a>
+                    <a href="" class="sublinks">&nbsp;</a>
+                  </div>
+                  <div class="col-md-3">
+                    <a href="" class="sublinks">&nbsp;</a>
+                    <a href="" class="sublinks">&nbsp;</a>
+                  </div>
+                  <div class="col-md-3">
+                    <a href="" class="sublinks">asdf Us Link</a>
+                    <a href="" class="sublinks">&nbsp;</a>
+                  </div>
+                  <div class="col-md-3">
+                    <a href="" class="sublinks">About sdf Link</a>
+                    <a href="" class="sublinks">&nbsp;</a>
+                  </div>
+                </div>
+              </div>
+              <!-- end about us -->
+
+              <!-- portfolio submenu -->
+              <div class="submenu" name="portfolio">
+                <div class="row">
+                  <div class="col-md-3">
+                    <a href="" class="sublinks">&nbsp;</a>
+                    <a href="" class="sublinks">&nbsp;</a>
+                  </div>
+                  <div class="col-md-3">
+                    <a href="" class="sublinks">Concept</a>
+                    <a href="" class="sublinks">International</a>
+                  </div>
+                  <div class="col-md-3">
+                    <a href="" class="sublinks">Master Planning</a>
+                    <a href="" class="sublinks">Open Space</a>
+                  </div>
+                  <div class="col-md-3">
+                    <a href="" class="sublinks">Private Gardens</a>
+                    <a href="" class="sublinks">Site Planning and Design</a>
+                  </div>
+                </div>
+              </div>
+              <!-- end portfolio -->
+
+
+              <!-- team submenu -->
+              <div class="submenu" name="team">
+                <div class="row">
+                  <div class="col-md-3">
+                    <a href="" class="sublinks">Tom Oslund, Principal</a>
+                    <a href="" class="sublinks">Catherine Murray</a>
+                    <a href="" class="sublinks">Han Zhang</a>
+                  </div>
+                  <div class="col-md-3">
+                    <a href="" class="sublinks">Jay Coatta</a>
+                    <a href="" class="sublinks">Joe Favour</a>
+                    <a href="" class="sublinks">Maria Grina</a>
+                  </div>
+                  <div class="col-md-3">
+                    <a href="" class="sublinks">Misa Inoue</a>
+                    <a href="" class="sublinks">Rebeccah Roberts</a>
+                    <a href="" class="sublinks">Ryan Herm</a>
+                  </div>
+                  <div class="col-md-3">
+                    <a href="" class="sublinks">Sandra Rolph</a>
+                    <a href="" class="sublinks">Tadd Kreun</a>
+                    <a href="">&nbsp;</a>
+                  </div>
+                </div>
+              </div>
+              <!-- end team -->
+
+
+
         <!-- /.row -->
         </div>
         <!-- /.container -->
@@ -76,40 +158,18 @@
         </div>
     </div>
 
-        <!-- Wrapper for Slides -->
-        <div class="carousel-inner">
-            <div class="item active">
-                <!-- Set the background image below. -->
-                <div class="fill" style="background-image:url('img/main/OAALA01.png');"></div>
+    <div id="home" class="panel">
+        <div class="inner">
+            <div id="backgroundchange">
+                <div class="backgroundimg" id="back1"></div>
+                <div class="backgroundimg" id="back2"></div>
+                <div class="backgroundimg" id="back3"></div>
+                <div class="backgroundimg" id="back4"></div>
+                <div class="backgroundimg" id="back5"></div>
             </div>
-            <div class="item">
-                <!-- Set the background image below. -->
-                <div class="fill" style="background-image:url('img/main/OAALA02.png');"></div>
-            </div>
-            <div class="item">
-                <!-- Set the background image below. -->
-                <div class="fill" style="background-image:url('img/main/OAALA03.png');"></div>
-            </div>
-            <div class="item">
-                <!-- Set the background image below. -->
-                <div class="fill" style="background-image:url('img/main/OAALA04.png');"></div>
-            </div>
-            <div class="item">
-                <!-- Set the background image below. -->
-                <div class="fill" style="background-image:url('img/main/OAALA05.png');"></div>
-            </div>
+        </div>
     </div>
-
-        <!-- Controls -->
-        <!--<a class="left carousel-control" href="#myCarousel" data-slide="prev">
-            <span class="icon-prev"></span>
-        </a>
-        <a class="right carousel-control" href="#myCarousel" data-slide="next">
-            <span class="icon-next"></span>
-        </a>-->
-
     </header>
-
 
     <!-- jQuery -->
     <script src="js/jquery.js"></script>
@@ -117,12 +177,6 @@
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
 
-    <!-- Script to Activate the Carousel -->
-    <script>
-    $('.carousel').carousel({
-        interval: 500 //changes the speed
-    })
-    </script>
 
     <!-- Script to Toggle the Menu -->
     <script>
@@ -132,6 +186,39 @@
       });
       $(window).resize(function() {
         $('#mobile-nav').hide();
+      });
+    </script>
+
+    <!-- Script to Toggle a Submenu -->
+    <script>
+      $('.has-submenu').hover(function() {
+
+        // toggle arrow visibility
+        $(this).toggleClass("arrow-visible");
+
+        // give the container the "submenu-open" class
+        $('#submenuContainer').toggleClass("submenu-open");
+        // save the "data-target" value in a variable
+        var target = $(this).attr("data-target");
+
+        // you can check to see the variable logging the correct target!
+        //console.log(target);
+
+        // hide all the other submenus
+        $('.submenu').hide();
+
+        //display the submenu that has the "name" attribute set to the SAME as the target variable we set above
+        $('[name='+target+']').show();
+
+      }, function() {
+
+        // toggle arrow visibility
+        $(this).toggleClass("arrow-visible");
+        // remove the container the "submenu-open" class
+        $('#submenuContainer').toggleClass("submenu-open");
+        // hide all de sub menus
+        $('.submenu').hide();
+
       });
     </script>
 
