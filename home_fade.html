@@ -46,17 +46,88 @@
                         <ul class="nav navbar-nav">
                           <!--<li><a href="home.html">Home</a></li>
                             <li><div class="vertical-line" style="height: 45px;" /></li>-->
-                            <li><a href="#">About Us</a></li>
+                            <li><a href="#" class="has-submenu" data-target="about-us">About Us</a></li>
                             <li><div class="vertical-line" style="height: 45px;" /></li>
-                            <li><a href="#">Portfolio</a></li>
+                            <li><a href="#" class="has-submenu" data-target="portfolio">Portfolio</a></li>
                             <li><div class="vertical-line" style="height: 45px;" /></li>
-                            <li><a href="#">Team</a></li>
+                            <li><a href="#" class="has-submenu" data-target="team">Team</a></li>
                             <li><div class="vertical-line" style="height: 45px;" /></li>
                             <li><a href="#">Contact</a></li>
                         </ul>
                     </div>
                     <!-- /.navbar-collapse -->
             </div>
+            <div class="submenu-container" id="submenuContainer">
+
+              <!-- about us submenu -->
+              <div class="submenu" name="about-us">
+                <div class="row">
+                  <div class="col-md-3">
+                    <a href="">About Us Link</a>
+                    <a href="">About Us Link</a>
+                  </div>
+                  <div class="col-md-3">
+                    <a href="">About Us Link</a>
+                    <a href="">About Us Link</a>
+                  </div>
+                  <div class="col-md-3">
+                    <a href="">About Us Link</a>
+                    <a href="">About Us Link</a>
+                  </div>
+                  <div class="col-md-3">
+                    <a href="">About Us Link</a>
+                    <a href="">About Us Link</a>
+                  </div>
+                </div>
+              </div>
+              <!-- end about us -->
+
+              <!-- portfolio submenu -->
+              <div class="submenu" name="portfolio">
+                <div class="row">
+                  <div class="col-md-3">
+                    <a href="">Portfolio Link</a>
+                    <a href="">Portfolio Link</a>
+                  </div>
+                  <div class="col-md-3">
+                    <a href="">Portfolio Link</a>
+                    <a href="">Portfolio Link</a>
+                  </div>
+                  <div class="col-md-3">
+                    <a href="">Portfolio Link</a>
+                    <a href="">Portfolio Link</a>
+                  </div>
+                  <div class="col-md-3">
+                    <a href="">Portfolio Link</a>
+                    <a href="">Portfolio Link</a>
+                  </div>
+                </div>
+              </div>
+              <!-- end portfolio -->
+
+              <!-- team submenu -->
+              <div class="submenu" name="team">
+                <div class="row">
+                  <div class="col-md-3">
+                    <a href="">Team Link</a>
+                    <a href="">Team Link</a>
+                  </div>
+                  <div class="col-md-3">
+                    <a href="">Team Link</a>
+                    <a href="">Team Link</a>
+                  </div>
+                  <div class="col-md-3">
+                    <a href="">Team Link</a>
+                    <a href="">Team Link</a>
+                  </div>
+                  <div class="col-md-3">
+                    <a href="">Team Link</a>
+                    <a href="">Team Link</a>
+                  </div>
+                </div>
+              </div>
+              <!-- end team -->
+
         <!-- /.row -->
         </div>
         <!-- /.container -->
@@ -104,6 +175,39 @@
       });
       $(window).resize(function() {
         $('#mobile-nav').hide();
+      });
+    </script>
+
+    <!-- Script to Toggle a Submenu -->
+    <script>
+      $('.has-submenu').hover(function() {
+
+        // toggle arrow visibility
+        $(this).toggleClass("arrow-visible");
+
+        // give the container the "submenu-open" class
+        $('#submenuContainer').toggleClass("submenu-open");
+        // save the "data-target" value in a variable
+        var target = $(this).attr("data-target");
+
+        // you can check to see the variable logging the correct target!
+        //console.log(target);
+
+        // hide all the other submenus
+        $('.submenu').hide();
+
+        //display the submenu that has the "name" attribute set to the SAME as the target variable we set above
+        $('[name='+target+']').show();
+
+      }, function() {
+
+        // toggle arrow visibility
+        $(this).toggleClass("arrow-visible");
+        // remove the container the "submenu-open" class
+        $('#submenuContainer').toggleClass("submenu-open");
+        // hide all de sub menus
+        $('.submenu').hide();
+
       });
     </script>
 

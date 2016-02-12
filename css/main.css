@@ -9,6 +9,10 @@
 
    ================================== */
 
+   body {
+     margin: 0;
+     background-color: #000000;
+   }
 
 
 /* ==================================
@@ -160,6 +164,22 @@ element.style {
 
 }
 
+.nav li a.arrow-visible {
+  position: relative;
+}
+.nav li a.arrow-visible:after {
+  content: "";
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 10px 10px 10px;
+  border-color: transparent transparent white transparent;
+  position: absolute;
+  bottom: -43px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
 
 /*mobile navigation*/
 
@@ -261,4 +281,22 @@ element.style {
 .mobile-navigation ul li a:focus {
   background-color: transparent;
   color: #AAD68C;
+}
+
+/* SUBMENU */
+.submenu-container {
+  height: 140px;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 20px;
+}
+.submenu-container.submenu-open {
+  border-top: 1px solid white;
+}
+.submenu {
+  display: none;
+}
+.submenu a {
+  display: block;
+  color: white;
 }
